@@ -1,26 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Tektur&display=swap");
+
+:root {
+  --blue-color: #2b4b82;
+  --pink-color: #f7b4a7;
+  --lightblue-color: #94ddde;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-.shown-links-div {
-  display: flex;
-  gap: 50px;
-  justify-content: center !important;
-  align-items: center;
+body {
+  background-color: var(--lightblue-color) !important;
 }
 
-.icon {
-  background-color: white;
-  border-radius: 180px !important;
-}
-
+/* nav  */
 .icon img {
-  width: 40px;
-  height: 40px;
+  width: 35px;
 }
 
-.nav-item a {
-  font-size: 25px;
-  margin-bottom: 40px;
-  border-bottom: 1px solid white;
+.navbar {
+  background-color: var(--blue-color) !important;
+}
+
+/* home  */
+
+.home {
+  background-color: var(--blue-color);
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  margin: auto;
+  width: 1500px;
+  height: 700px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.home-left {
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  font-family: "Tektur";
+}
+
+.home1,
+.home2,
+.home3,
+.home4 {
+  font-size: 60px;
+  color: white;
+}
+
+.home1 {
+  background-color: var(--pink-color);
+  border-radius: 10px;
+  padding: 0 5px 0 5px;
+  color: var(--blue-color);
+}
+
+.home4 {
+  font-weight: bolder;
+  color: var(--pink-color);
+}
+.title {
+  margin-bottom: 80px;
+  font-size: 60px;
+  background-color: white;
+  color: #14213d;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+
+.home-right {
+  margin: auto;
+}
+.home-right img {
+  width: 630px;
+}
+
+.home-social {
+  text-align: center !important;
+  margin-top: 25px;
+}
+
+.home-social img {
+  width: 60px;
+  margin-right: 15px !important;
 }

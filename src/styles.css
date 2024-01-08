@@ -310,3 +310,40 @@ body {
 .c {
   border-bottom: #2b4b82 6px solid !important;
 }
+
+/* certificates end  */
+
+/* projects  */
+.projects-section {
+  margin: auto;
+  width: 1400px;
+  border-radius: 10px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  box-shadow: 1px 4px 0px 4px rgba(96, 120, 143, 0.5);
+  background-color: var(--blue-color);
+}
+
+.project-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+}
+.project-right-img {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.projects-content img {
+  width: 350px;
+}
+
+.projects-about {
+  color: white;
+  width: 350px;
+}
+
+.projects-about h1 {
+  border-bottom: 1px solid white;
+}

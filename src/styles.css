@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-color: var(--lightblue-color) !important;
+  background-color: white;
 }
 
 /* nav  */
@@ -80,86 +80,12 @@ body {
   border-bottom: 1px solid white;
 }
 
-/* home  */
-
-.home {
-  background: rgb(43, 75, 130);
-  background: linear-gradient(
-    35deg,
-    rgba(43, 75, 130, 1) 52%,
-    rgba(148, 221, 222, 1) 52%
-  );
-  display: grid;
-  grid-template-columns: 6fr 6fr;
-  margin: auto;
-  width: 1500px;
-  height: 700px;
-  border-radius: 10px;
-  margin-top: 100px;
-  box-shadow: 0px 4px 3px 1px rgba(96, 120, 143, 0.5);
-}
-
-.home-left {
-  margin: auto;
-  padding: 30px;
-  border-radius: 10px;
-  font-family: "Architects Daughter";
-}
-
-.home1,
-.home2,
-.home3,
-.home4 {
-  font-size: 60px;
-  color: white;
-}
-
-.home1 {
-  background-color: var(--pink-color);
-  border-radius: 10px;
-  padding: 0 5px 0 5px;
-  color: var(--blue-color);
-}
-
-.home4 {
-  font-weight: bolder;
-  color: var(--lightblue-color);
-}
-
-.title {
-  margin-bottom: 80px;
-  font-size: 60px;
-  background-color: var(--blue-color);
-  color: white;
-  text-align: center;
-  border-radius: 10px;
-  font-weight: bolder;
-}
-
-.home-right {
-  margin: auto;
-}
-.home-right img {
-  width: 630px;
-}
-
-.home-social {
-  text-align: center !important;
-  margin-top: 25px;
-}
-
-.home-social img {
-  width: 60px;
-  margin-right: 15px !important;
-}
-
-/* home end  */
-
 /* about me  */
 
 .about-me {
   margin: auto;
-  width: 1500px;
+  max-width: 1200px;
+
   border-radius: 10px;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -169,8 +95,8 @@ body {
 .section-header {
   background-color: white;
   display: flex;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+
+  border: 1px solid black;
 }
 
 .section-header img {
@@ -260,7 +186,7 @@ body {
     rgba(24, 114, 125, 1) 72%
   );
   margin: auto;
-  width: 1500px;
+  width: auto;
   border-radius: 10px;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -269,20 +195,20 @@ body {
 .certificates-content {
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   padding: 20px;
 }
 
 .certificate img {
   width: 180px;
   height: 155px;
-  border-radius: 20px;
+  border-radius: 10px;
   margin-top: 10px;
 }
 
 .certificate h3 {
   font-size: 20px !important;
-  color: white;
+  color: black;
   margin-bottom: 0px;
   margin-top: 10px;
 }
@@ -292,7 +218,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border: 5px solid white;
+  background-color: rgba(255, 255, 255, 0.6);
   font-family: "Tektur";
   height: 300px;
   width: 280px;
@@ -303,12 +229,17 @@ body {
 .certificates-container {
   margin: auto;
   width: 250px;
-  height: 350px;
+  height: 300px;
   margin-top: 20px;
 }
 
 .c {
-  border-bottom: #2b4b82 6px solid !important;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.s {
+  border: none !important;
 }
 
 /* certificates end  */

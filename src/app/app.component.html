@@ -1,14 +1,14 @@
 <!-- nav start  -->
 
-<nav class="navbar navbar-dark  fixed-top">
+<nav class="navbar navbar-dark  fixed-top" [hidden]="true">
   <div class="container-fluid">
     <a class="navbar-brand icon" href="#"><img src="../assets/BA.png" alt=""></a>
     <div class="shown-links-div">
       <a class="navbar-brand mid" href="#">Home</a>
-      <a class="navbar-brand mid" href="#">About</a>
+      <a class="navbar-brand mid" (click)="slideToSection('about')">About</a>
       <a class="navbar-brand mid" href="#">Education</a>
-      <a class="navbar-brand mid" href="#">Projects</a>
-      <a class="navbar-brand mid" href="#">Certificates</a>
+      <a class="navbar-brand mid" (click)="slideToSection('projects')">Projects</a>
+      <a class="navbar-brand mid" (click)="slideToSection('certificates')">Certificates</a>
       <a class="navbar-brand mid" href="#">Contact</a>
 
     </div>
@@ -56,34 +56,13 @@
 <!-- nav end  -->
 
 <!-- home start  -->
-
-<section class="home" id="home">
-  <div class="home-left">
-    <h1 class="title">My Portfolio Site!</h1>
-    <h1 class="home-title">
-      <span class="home1">Hello!</span>
-      <span class="home2"> I am</span><br>
-      <span class="home3">Berkay Anduv</span><br>
-      <span class="home4">Frontend Developer</span><br>
-    </h1>
-    <div class="home-social">
-      <a href=""><img src="../../../assets/logo/github.png"></a>
-      <a href=""><img src="../../../assets/logo/linkedin.png"></a>
-      <a href=""><img src="../../../assets/logo/instagram.png"></a>
-      <a href=""><img src="../../../assets/logo/facebook.png"></a>
-
-    </div>
-  </div>
-  <div class="home-right">
-    <img src="../assets/home-right.png" alt="">
-  </div>
-</section>
+<app-home></app-home>
 <!-- home end  -->
 
 <!-- about me  -->
 
-<section class="about-me">
-  <div class="section-header">
+<section id="about" class="about-me">
+  <div class="section-header c">
     <h1><img src="../assets/colors1.png">ABOUT ME<img src="../assets/colors2.png"></h1>
   </div>
   <div class="about-me-content">
@@ -120,8 +99,8 @@
 
 <!-- sertificates  -->
 
-<section class="certificates">
-  <div class="section-header c">
+<section id="certificates" class="certificates">
+  <div class="section-header s">
     <h1><img src="../assets/colors1.png">Certificates<img src="../assets/colors2.png"></h1>
   </div>
   <div class="certificates-content">
@@ -136,9 +115,9 @@
 
 <!-- sertificates end  -->
 
-<!-- sertificates  -->
+<!-- projects  -->
 
-<section class="projects-section">
+<section id="projects" class="projects-section">
   <div class="section-header c">
     <h1><img src="../assets/colors1.png">Projects<img src="../assets/colors2.png"></h1>
   </div>
@@ -159,4 +138,4 @@
 
 </section>
 
-<!-- sertificates end  -->
+<!-- projects end  -->

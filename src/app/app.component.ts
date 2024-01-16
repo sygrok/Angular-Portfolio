@@ -1,3 +1,4 @@
+import { slideToSection } from './../utils';
 import { Component } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { AppModalComponent } from './components/app-modal/app-modal.component';
@@ -15,6 +16,10 @@ export class AppComponent {
       size: 'lg',
     });
     modalRef.componentInstance.certificate = certificate;
+  }
+
+  slideToSection(sectionId: string, offset?: number) {
+    return slideToSection(sectionId, offset);
   }
 
   title = 'Angular-Portfolio';

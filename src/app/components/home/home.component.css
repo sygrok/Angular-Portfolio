@@ -9,21 +9,30 @@
   padding: 10px;
 }
 .home {
-  background-color: #1e1e24;
-  display: grid;
-  grid-template-columns: 6fr 6fr;
+  background-image: url(../../../assets/bg-img.png);
+
   margin: auto;
   max-width: 100%;
   height: 100vh;
 
   box-shadow: 0px 4px 3px 1px rgba(96, 120, 143, 0.5);
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-.home-left {
+.home-top {
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  margin-top: 150px;
+}
+
+.home-content {
   margin: auto;
-  padding: 30px;
   border-radius: 10px;
   font-family: "Architects Daughter";
+  text-align: center;
+  margin-right: 1px;
+  border-bottom: 1px solid var(--white);
 }
 
 .home1,
@@ -31,46 +40,71 @@
 .home3,
 .home4 {
   font-size: 60px;
-  color: #d3d0cb;
+  color: var(--white);
 }
 
 .home1 {
-  background-color: #dd6031;
+  background-color: var(--orange);
   border-radius: 10px;
   padding: 0 5px 0 5px;
-  color: var(--blue-color);
+  color: var(--dark);
 }
 
 .home4 {
   font-weight: bolder;
-  color: var(--lightblue-color);
-}
-
-.title {
-  margin-bottom: 80px;
-  font-size: 60px;
-  background-color: var(--blue-color);
-  color: white;
-  text-align: center;
-  border-radius: 10px;
-  font-weight: bolder;
-}
-
-.home-right {
-  margin: auto;
-}
-.home-right img {
-  width: 630px;
+  color: var(--orange);
 }
 
 .home-social {
   text-align: center !important;
-  margin-top: 25px;
+  color: var(--white);
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
 }
 
-.home-social img {
-  width: 60px;
-  margin-right: 15px !important;
+.home-img {
+  margin: auto;
+  margin-left: 40px;
+  z-index: 2;
+}
+
+/* animation  */
+.img-animation {
+  position: relative;
+  padding: 8px;
+  border-radius: 70px;
+  background: repeating-conic-gradient(
+    from var(--a),
+    var(--orange) 0%,
+    var(--primary) 5%,
+    transparent 5%,
+    transparent 40%,
+    var(--red) 50%
+  );
+  animation: animate 4s linear infinite;
+}
+@property --a {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes animate {
+  0% {
+    --a: 0deg;
+  }
+  100% {
+    --a: 360deg;
+  }
+}
+
+/* animation  end */
+
+.photo {
+  width: 300px;
+  border-radius: 70px;
 }
 
 /* home end  */

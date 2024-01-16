@@ -1,5 +1,5 @@
 import { slideToSection } from './../utils';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { AppModalComponent } from './components/app-modal/app-modal.component';
 
@@ -8,8 +8,10 @@ import { AppModalComponent } from './components/app-modal/app-modal.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   constructor(private modalService: NgbModal) {}
+
+  ngOnInit(): void {}
 
   openModal(certificate: any) {
     const modalRef = this.modalService.open(AppModalComponent, {

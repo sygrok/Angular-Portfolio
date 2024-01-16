@@ -9,6 +9,10 @@
   --green-color: #18727d;
 }
 
+canvas {
+  display: block;
+}
+
 html {
   scroll-behavior: smooth;
 }

@@ -18,6 +18,7 @@
   margin-bottom: 100px;
   box-shadow: 1px 4px 0px 4px rgba(96, 120, 143, 0.5);
   padding-top: 100px;
+  position: relative;
 }
 
 .certificates-title h1 {
@@ -34,12 +35,24 @@
   margin: auto;
 }
 
+.certificate-logo {
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  margin-bottom: -75px;
+}
+
+.certificate-logo img {
+  width: 150px;
+}
+
 /* card  */
 .card-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 50px;
   padding: 50px;
+  padding-bottom: 80px;
 }
 
 .card {

@@ -64,21 +64,7 @@
 <!-- about me end  -->
 
 <!-- sertificates  -->
-
-<section id="certificates" class="certificates">
-  <div class="section-header s">
-    <h1><img src="../assets/colors1.png">Certificates<img src="../assets/colors2.png"></h1>
-  </div>
-  <div class="certificates-content">
-    <div class="certificates-container" *ngFor="let x of certificates">
-      <div (click)="openModal(x)" class="certificate">
-        <img [src]="x.img" alt="">
-        <h3>{{x.name}}</h3>
-      </div>
-    </div>
-  </div>
-</section>
-
+<app-certificates-section></app-certificates-section>
 <!-- sertificates end  -->
 
 <!-- projects  -->

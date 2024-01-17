@@ -1,0 +1,26 @@
+<section id="certificates" class="certificates">
+    <div class="certificates-title">
+        <h1>Certificates</h1>
+    </div>
+    <div class="card-container">
+        <div class="card" *ngFor="let x of certificates">
+            <div class="card-details">
+                <p class="text-title">sa</p>
+                <p class="text-body">{{x.name}}</p>
+                <button (click)="openModal(x)" class="card-button"><i
+                        class="fa-regular fa-square-caret-up"></i></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- <div class="certificates-content">
+    <div class="certificates-container" *ngFor="let x of certificates">
+        <div (click)="openModal(x)" class="certificate">
+            <img [src]="x.img" alt="">
+            <h3>{{x.name}}</h3>
+        </div>
+    </div>
+</div> -->

@@ -1,0 +1,101 @@
+/* certificates  */
+
+.certificates {
+  background-image: radial-gradient(
+      70% 53% at 36% 76%,
+      var(--dark) 0%,
+      transparent 100%
+    ),
+    radial-gradient(42% 53% at 15% 94%, var(--red) 7%, transparent 100%),
+    radial-gradient(42% 53% at 34% 72%, var(--primary) 7%, transparent 100%),
+    radial-gradient(74% 86% at 67% 38%, var(--primary) 24%, transparent 100%),
+    linear-gradient(125deg, var(--dark) 1%, var(--red) 100%);
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+  width: auto;
+  border-radius: 10px;
+  margin-bottom: 100px;
+  box-shadow: 1px 4px 0px 4px rgba(96, 120, 143, 0.5);
+  padding-top: 100px;
+}
+
+.certificates-title h1 {
+  text-align: center;
+  background: -webkit-linear-gradient(white, var(--orange));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Roboto, "Helvetica Neue", sans-serif !important;
+  font-weight: 700;
+  border-bottom: 1px solid var(--white);
+}
+.certificates-title {
+  width: 250px;
+  margin: auto;
+}
+
+/* card  */
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 50px;
+  padding: 50px;
+}
+
+.card {
+  width: 190px;
+  height: 254px;
+  border-radius: 20px;
+  background: var(--dark);
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid var(--orange);
+  transition: 0.5s ease-out;
+  overflow: visible;
+  margin: auto;
+}
+
+.card-details {
+  height: 100%;
+  gap: 0.5em;
+  display: grid;
+  place-content: center;
+}
+
+.card-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: 1.5rem;
+  padding: 0.2rem 0.7rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+.text-body {
+  color: var(--white) !important;
+}
+
+/*Text*/
+.text-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+
+/*Hover*/
+.card:hover {
+  border-color: #008bf8;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}

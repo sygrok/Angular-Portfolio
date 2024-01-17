@@ -14,6 +14,7 @@
   --pink-color: #f7b4a7;
   --lightblue-color: #94ddde;
   --green-color: #18727d;
+  --font1: "Tektur";
 }
 
 canvas {
@@ -25,7 +26,7 @@ html {
 }
 
 body {
-  background-color: white;
+  background-color: var(--dark) !important;
 }
 
 /* nav  */
@@ -89,102 +90,6 @@ body {
 .mid:hover {
   border-bottom: 1px solid white;
 }
-
-/* about me  */
-
-.about-me {
-  margin: auto;
-  max-width: 1200px;
-
-  border-radius: 10px;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  box-shadow: 1px 4px 0px 4px rgba(96, 120, 143, 0.5);
-}
-
-.section-header {
-  background-color: white;
-  display: flex;
-
-  border: 1px solid black;
-}
-
-.section-header img {
-  width: 200px;
-}
-
-.section-header h1 {
-  margin: auto;
-  font-family: "Tektur";
-}
-
-.about-me-content {
-  background-color: var(--blue-color);
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-.about-me-left {
-  background-color: white;
-  font-family: "Tektur";
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  border-bottom-left-radius: 10px;
-  padding: 70px;
-}
-
-.about-me-left .photo {
-  width: 250px;
-  border-radius: 180px;
-  border: 6px solid var(--blue-color);
-}
-
-.about-me-left .home-social img {
-  width: 30px;
-}
-
-.about-me-left h2 {
-  font-weight: bolder;
-}
-
-.about-me-left h3 {
-  background-color: #18727d;
-  border-radius: 40px;
-  font-style: italic;
-
-  color: white;
-  margin: auto;
-  width: 300px;
-}
-
-.about-me-right {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    144deg,
-    rgba(255, 255, 255, 1) 5%,
-    rgba(43, 75, 130, 1) 5%
-  );
-  margin: auto;
-  color: white;
-  font-size: 25px;
-  padding: 100px;
-  font-family: "Tektur";
-  border-bottom-right-radius: 10px;
-}
-
-.about-me-right span {
-  background-color: var(--pink-color);
-  padding: 5px;
-  margin: auto;
-  width: 80px;
-  margin-left: 0;
-  border-radius: 15px;
-}
-
-/* about me end  */
 
 /* certificates  */
 

@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppModalComponent } from './components/app-modal/app-modal.component';
 import { HomeComponent } from './components/home/home.component';
+import { AboutMeComponent } from './components/about-me/about-me.component';
 
 @NgModule({
-  declarations: [AppComponent, AppModalComponent, HomeComponent],
+  declarations: [AppComponent, AppModalComponent, HomeComponent, AboutMeComponent],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],

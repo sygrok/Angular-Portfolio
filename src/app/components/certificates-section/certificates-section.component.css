@@ -59,7 +59,13 @@
   height: 100%;
   gap: 0.5em;
   display: grid;
-  place-content: center;
+  place-content: top;
+}
+
+.card-details i {
+  font-size: 35px;
+  color: var(--white);
+  text-align: center;
 }
 
 .card-button {
@@ -80,6 +86,7 @@
 
 .text-body {
   color: var(--white) !important;
+  text-align: center;
 }
 
 /*Text*/

@@ -5,7 +5,7 @@
     <div class="card-container">
         <div class="card" *ngFor="let x of certificates">
             <div class="card-details">
-                <i [className]="x.logo"></i>
+                <i [className]="x.logo" id="card-logo"></i>
                 <p class="text-body">{{x.name}}</p>
                 <button (click)="openModal(x)" class="card-button"><i
                         class="fa-regular fa-square-caret-up"></i></button>

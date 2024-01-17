@@ -62,10 +62,14 @@
   place-content: top;
 }
 
-.card-details i {
-  font-size: 35px;
+#card-logo {
+  font-size: 65px;
   color: var(--white);
   text-align: center;
+}
+
+.card-button i {
+  transition: 0.1s linear all;
 }
 
 .card-button {
@@ -102,7 +106,16 @@
   box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
 }
 
+.card:hover #card-logo {
+  color: #008bf8;
+}
+
 .card:hover .card-button {
   transform: translate(-50%, 50%);
   opacity: 1;
+}
+
+.card-button:hover i {
+  font-size: 1.7rem;
+  color: var(--orange);
 }

@@ -1,7 +1,7 @@
-<div class="modal-body x">
-    <h3>{{certificate.name}}</h3>
+<div class="modal-body">
+    <h3>{{certificate.name}}
+        <button type="button" (click)="closeModal()"><i class="fa-sharp fa-solid fa-circle-xmark"></i></button>
+    </h3>
+
     <img [src]="certificate.img">
-
 </div>
-
-<button type="button" class="btn btn-secondary" (click)="closeModal()">X</button>
